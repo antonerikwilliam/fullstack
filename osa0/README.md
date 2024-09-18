@@ -14,7 +14,7 @@ Osa 0.4
     Note right of browser: the browser makes post request from the form to the server
     server-->>browser: Status code 302 (Found)
     Note right of server: the server answers with redirect note that urge browser to make new GET request for notes address
-    deacticate server
+    deactivate server
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
