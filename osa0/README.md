@@ -5,7 +5,7 @@ Osa 0.2 - Luettu 18.9.2024.
 Osa 0.3 - Luettu 18.9.2024
 
 Osa 0.4 
-
+    ```mermaid
     sequenceDiagram
     participant browser
     participant server
@@ -32,5 +32,6 @@ Osa 0.4
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
-    Note right of browser: The browser executes the callback function that renders the notes 
+    Note right of browser: The browser executes the callback function that renders the notes
+    ```
 
