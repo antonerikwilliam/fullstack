@@ -1,3 +1,8 @@
+Viikko 0
+
+
+Tehtävät
+
 Osa 0.1 - Luettu 18.9.2024.
 
 Osa 0.2 - Luettu 18.9.2024.
@@ -48,7 +53,7 @@ Note right of server: The server sends html document to browser which triggers n
 deactivate server
 browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
 activate server
-server-->>browser: css document
+server-->>browser: css file
 deactivate server
 browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
 activate server
@@ -62,5 +67,17 @@ deactivate server
 Note right of browser: The browser executes the callback function that renders the notes
 ```
 
-    
+Osa 0.6
+
+```mermaid
+sequenceDiagram
+participant browser
+participant server
+browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+activate server
+Note right of browser: Browser sends post request from the new note added
+server-->>browser: Status code 201 (Created)
+Note right of server: Server shows the new note without reloading the whole page
+deactivate server
+```
 
