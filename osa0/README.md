@@ -77,7 +77,7 @@ browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_s
 activate server
 Note right of browser: Browser sends post request from the new note added
 server-->>browser: Status code 201 (Created)
-Note right of server: Server shows the new note without reloading the whole page
+Note right of server: Server adds the new note without the need of redirection so browser dont have to reload the page
 deactivate server
 ```
 
