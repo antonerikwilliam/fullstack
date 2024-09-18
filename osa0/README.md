@@ -5,7 +5,7 @@ Osa 0.2 - Luettu 18.9.2024.
 Osa 0.3 - Luettu 18.9.2024
 
 Osa 0.4 
-    ```mermaid
+    ```
     sequenceDiagram
     participant browser
     participant server
